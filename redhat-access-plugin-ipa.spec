@@ -30,6 +30,7 @@ make install DESTDIR=%{buildroot}%{_datadir}
 
 %files
 %{plugin_dir}
+%doc AUTHORS LICENSE README.md
 
 %changelog
 * Mon Jul 14 2014 Petr Vobornik <pvoborni@redhat.com> - 1.0-1
