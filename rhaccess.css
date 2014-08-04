@@ -1,0 +1,25 @@
+.rha-side-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rha-page-header {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-offset .container-fluid .rha-page-header,
+.container-fluid.rha-side-padding .rha-page-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-offset {
+    padding: 0;
+}
+
+.rha-search-spinner {
+    height: 26px;
+    width: 26px;
+    background-size: 26px 26px;
+}

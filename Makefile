@@ -21,6 +21,8 @@ css:
 	cat assets/styles/redhat_access_angular_ui-embedded-images.css > $(distdir)/styles/rhaccess.css
 	echo ' ' >> $(distdir)/styles/rhaccess.css
 	cat assets/styles/glyphicons.css >> $(distdir)/styles/rhaccess.css
+	echo ' ' >> $(distdir)/styles/rhaccess.css
+	cat rhaccess.css >> $(distdir)/styles/rhaccess.css
 
 glyphs:
 	mkdir -p $(distdir)/fonts
