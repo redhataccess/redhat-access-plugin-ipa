@@ -23,7 +23,7 @@ automated diagnostic services, etc.
 %setup -q
 
 %build
-make all
+make js css glyphs
 
 %install
 make install DESTDIR=%{buildroot}%{_datadir}
