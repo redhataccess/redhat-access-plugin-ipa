@@ -233,7 +233,7 @@ rhaccess.RHAApp = declare([], {
         config(['$provide',
           function ($provide) {
             $provide.value('SECURITY_CONFIG', { displayLoginStatus: true, autoCheckLogin: true, forceLogin: false, loginURL:"", logoutURL:"" });
-            $provide.value('NEW_DEFAULTS', { product: 'Red Hat Enterprise Linux', version: '7.0' });
+            $provide.value('NEW_DEFAULTS', { product: 'Red Hat Enterprise Linux', version: '7.1' });
           }
         ]).
         run(['TITLE_VIEW_CONFIG', '$http', 'securityService', 'gettextCatalog','CHAT_SUPPORT',
