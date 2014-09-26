@@ -1,6 +1,6 @@
 
 RPMBUILD ?= $(PWD)/rpmbuild
-VERSION=1.0
+VERSION=0.9.1
 NAME=redhat-access-plugin-ipa
 FULLNAME=$(NAME)-$(VERSION)
 TARBALL=v$(VERSION).tar.gz

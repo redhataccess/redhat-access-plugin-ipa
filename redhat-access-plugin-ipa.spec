@@ -1,7 +1,7 @@
 %global plugin_dir %{_datadir}/ipa/ui/js/plugins/rhaccess
 
 Name:       redhat-access-plugin-ipa
-Version:    1.0
+Version:    0.9.1
 Release:    1%{?dist}
 Summary:    Plugin for Identity Management to allow access Red Hat subscriber services
 Vendor:     Red Hat, Inc.
@@ -33,5 +33,5 @@ make install DESTDIR=%{buildroot}%{_datadir}
 %doc AUTHORS LICENSE README.md
 
 %changelog
-* Mon Jul 14 2014 Petr Vobornik <pvoborni@redhat.com> - 1.0-1
+* Mon Jul 14 2014 Petr Vobornik <pvoborni@redhat.com> - 0.9.1-1
 - initial package
