@@ -220,15 +220,15 @@ rhaccess.RHAApp = declare([], {
         window.strata.setRedhatClientID('redhat_access_plugin_ipa_7.1');
 
         window.angular.module('RedhatAccess', [
-          'ngSanitize',
-          'ui.select2',
-          'RedhatAccess.header',
-          'RedhatAccess.template',
-          'RedhatAccess.cases',
-          'RedhatAccess.security',
-          'RedhatAccess.search',
-          'RedhatAccess.logViewer',
-          'RedhatAccess.ui-utils'
+            'ngSanitize',
+            'localytics.directives',
+            'RedhatAccess.header',
+            'RedhatAccess.template',
+            'RedhatAccess.cases',
+            'RedhatAccess.security',
+            'RedhatAccess.search',
+            'RedhatAccess.logViewer',
+            'RedhatAccess.ui-utils'
         ]).
         config(['$provide',
           function ($provide) {

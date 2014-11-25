@@ -8,6 +8,7 @@ distdir=dist/$(FULLNAME)
 DESTDIR ?= /usr/share
 plugindir=$(DESTDIR)/ipa/ui/js/plugins/rhaccess
 jsfiles=assets/angular.min.js \
+        assets/redhat_access_angular_ui-deps.js \
         assets/redhat_access_angular_ui.js
 
 js:
@@ -18,7 +19,9 @@ js:
 
 css:
 	mkdir -p $(distdir)/styles
-	cat assets/styles/redhat_access_angular_ui-embedded-images.css > $(distdir)/styles/rhaccess.css
+	cat assets/styles/redhat_access_angular_ui-deps-embedded-images.css > $(distdir)/styles/rhaccess.css
+	echo ' ' >> $(distdir)/styles/rhaccess.css
+	cat assets/styles/redhat_access_angular_ui-embedded-images.css >> $(distdir)/styles/rhaccess.css
 	echo ' ' >> $(distdir)/styles/rhaccess.css
 	cat assets/styles/glyphicons.css >> $(distdir)/styles/rhaccess.css
 	echo ' ' >> $(distdir)/styles/rhaccess.css
